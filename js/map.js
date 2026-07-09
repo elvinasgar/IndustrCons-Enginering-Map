@@ -364,8 +364,9 @@ function wireSidebarToggle() {
   });
   document.getElementById('closeSidebarBtn').addEventListener('click', close);
   scrim.addEventListener('click', close);
-
-  if (!isMobile()) sidebar.classList.remove('collapsed');
+  // Sidebar always starts collapsed — the user opens it via the filter icon.
+  // (Previously this auto-expanded on wide viewports, which caused a confusing
+  // "half open" layout on phones running the browser's Desktop-site mode.)
 }
 
 // ---------------------------------------------------------------------
@@ -438,6 +439,9 @@ async function boot() {
     openDetail(params.get('id'));
   } else if (params.get('lat') && params.get('lng')) {
     map.setView([parseFloat(params.get('lat')), parseFloat(params.get('lng'))], 12);
+  }
+  if (params.toString()) {
+    window.history.replaceState({}, '', window.location.pathname);
   }
 }
 
