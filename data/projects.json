@@ -1,0 +1,1086 @@
+{
+  "generated": "2026-07-09",
+  "count": 36,
+  "items": [
+    {
+      "id": "proj-0001",
+      "category": "construction-projects",
+      "name": "Northgate Mixed-Use Tower",
+      "description": "32-storey mixed-use tower with retail podium and residential floors above.",
+      "lat": 51.5155,
+      "lng": -0.0922,
+      "address": "Northgate District",
+      "country": "United Kingdom",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Bramwell Construction Group",
+      "consultant": "Halvorsen Consulting Engineers",
+      "client": "Northgate Development Partners",
+      "startDate": "2019-12-09",
+      "finishDate": "2021-04-05",
+      "disciplines": [
+        "MEP",
+        "Materials",
+        "Civil"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects"
+      ]
+    },
+    {
+      "id": "proj-0002",
+      "category": "construction-projects",
+      "name": "Riverside Cultural Centre",
+      "description": "Performing arts and exhibition centre on a reclaimed riverside site.",
+      "lat": 45.4642,
+      "lng": 9.19,
+      "address": "Navigli Waterfront",
+      "country": "Italy",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Ferretti Costruzioni",
+      "consultant": "Studio Arden Engineers",
+      "client": "City of Milan Cultural Trust",
+      "startDate": "2019-01-03",
+      "finishDate": "2020-04-17",
+      "disciplines": [
+        "Materials",
+        "Mechanical",
+        "Process"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects"
+      ]
+    },
+    {
+      "id": "proj-0003",
+      "category": "construction-projects",
+      "name": "Delta Business Park Phase II",
+      "description": "Second phase of a low-rise commercial office park with shared logistics yard.",
+      "lat": 25.2048,
+      "lng": 55.2708,
+      "address": "Delta Business Park",
+      "country": "United Arab Emirates",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Al Sarraf Building Contractors",
+      "consultant": "Meridian Structural Engineers",
+      "client": "Delta Estates LLC",
+      "startDate": "2020-08-19",
+      "finishDate": "2022-01-25",
+      "disciplines": [
+        "Transportation",
+        "Environmental",
+        "Electrical"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects"
+      ]
+    },
+    {
+      "id": "proj-0004",
+      "category": "construction-projects",
+      "name": "Summit Ridge Residential Quarter",
+      "description": "480-unit terraced housing development on a hillside brownfield site.",
+      "lat": 37.9838,
+      "lng": 23.7275,
+      "address": "Summit Ridge",
+      "country": "Greece",
+      "status": "In Progress",
+      "progress": 45,
+      "contractor": "Argolis Build Co",
+      "consultant": "Halvorsen Consulting Engineers",
+      "client": "Summit Ridge Housing Authority",
+      "startDate": "2020-06-04",
+      "finishDate": "2021-07-04",
+      "disciplines": [
+        "Surveying",
+        "Electrical",
+        "Structural"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects"
+      ]
+    },
+    {
+      "id": "proj-0005",
+      "category": "bridges",
+      "name": "Kestrel Strait Suspension Bridge",
+      "description": "1,850 m main-span suspension bridge connecting two coastal peninsulas.",
+      "lat": 60.3913,
+      "lng": 5.3221,
+      "address": "Kestrel Strait",
+      "country": "Norway",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Fjordline Marine Contractors",
+      "consultant": "Atlas Bridgeworks Consulting",
+      "client": "National Roads Authority",
+      "startDate": "2023-02-13",
+      "finishDate": "2024-09-10",
+      "disciplines": [
+        "Environmental",
+        "Surveying",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges"
+      ]
+    },
+    {
+      "id": "proj-0006",
+      "category": "bridges",
+      "name": "Meridian Valley Cable-Stay Crossing",
+      "description": "Cable-stayed crossing over a 620 m river gorge carrying a dual carriageway.",
+      "lat": 46.948,
+      "lng": 7.4474,
+      "address": "Meridian Valley",
+      "country": "Switzerland",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Alpetta Civil Works",
+      "consultant": "Atlas Bridgeworks Consulting",
+      "client": "Federal Roads Office",
+      "startDate": "2019-11-08",
+      "finishDate": "2022-02-28",
+      "disciplines": [
+        "Transportation",
+        "Electrical",
+        "Hydraulic"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges"
+      ]
+    },
+    {
+      "id": "proj-0007",
+      "category": "bridges",
+      "name": "Amber Creek Pedestrian Bridge",
+      "description": "Curved steel footbridge linking a riverside park to the transit interchange.",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "address": "Amber Creek Park",
+      "country": "Canada",
+      "status": "On Hold",
+      "progress": 50,
+      "contractor": "Lakeshore Steel Erectors",
+      "consultant": "Northline Structural Partners",
+      "client": "City Parks & Transit",
+      "startDate": "2020-06-12",
+      "finishDate": "2021-11-09",
+      "disciplines": [
+        "MEP",
+        "Civil",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges"
+      ]
+    },
+    {
+      "id": "proj-0008",
+      "category": "bridges",
+      "name": "Copperbelt Rail Viaduct",
+      "description": "2.1 km elevated rail viaduct carrying freight and passenger lines over a floodplain.",
+      "lat": -15.4067,
+      "lng": 28.2871,
+      "address": "Copperbelt Corridor",
+      "country": "Zambia",
+      "status": "In Progress",
+      "progress": 45,
+      "contractor": "Kalundu Civil Contractors",
+      "consultant": "Atlas Bridgeworks Consulting",
+      "client": "National Rail Corporation",
+      "startDate": "2023-12-08",
+      "finishDate": "2024-08-13",
+      "disciplines": [
+        "Process",
+        "Materials",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges"
+      ]
+    },
+    {
+      "id": "proj-0009",
+      "category": "roads",
+      "name": "Trans-Highland Expressway Section 4",
+      "description": "38 km dual-carriageway expressway section through mountainous terrain.",
+      "lat": 4.711,
+      "lng": -74.0721,
+      "address": "Trans-Highland Corridor",
+      "country": "Colombia",
+      "status": "On Hold",
+      "progress": 15,
+      "contractor": "Andesa Roadworks",
+      "consultant": "Continental Transport Engineers",
+      "client": "Ministry of Transport",
+      "startDate": "2019-04-27",
+      "finishDate": "2020-06-13",
+      "disciplines": [
+        "Mechanical",
+        "Surveying",
+        "Environmental"
+      ],
+      "images": [
+        "assets/images/road-1.svg",
+        "assets/images/road-2.svg",
+        "assets/images/road-3.svg"
+      ],
+      "tags": [
+        "roads"
+      ]
+    },
+    {
+      "id": "proj-0010",
+      "category": "roads",
+      "name": "Coastal Ring Road Upgrade",
+      "description": "Widening and resurfacing of the coastal ring road including three new interchanges.",
+      "lat": -33.8688,
+      "lng": 151.2093,
+      "address": "Coastal Ring Road",
+      "country": "Australia",
+      "status": "In Progress",
+      "progress": 45,
+      "contractor": "Southbank Civil Contractors",
+      "consultant": "Continental Transport Engineers",
+      "client": "State Roads Agency",
+      "startDate": "2024-08-13",
+      "finishDate": "2027-08-05",
+      "disciplines": [
+        "Mechanical",
+        "Materials",
+        "MEP"
+      ],
+      "images": [
+        "assets/images/road-1.svg",
+        "assets/images/road-2.svg",
+        "assets/images/road-3.svg"
+      ],
+      "tags": [
+        "roads"
+      ]
+    },
+    {
+      "id": "proj-0011",
+      "category": "roads",
+      "name": "Desert Corridor Highway",
+      "description": "Greenfield 4-lane highway across arid terrain linking two regional capitals.",
+      "lat": 24.7136,
+      "lng": 46.6753,
+      "address": "Desert Corridor",
+      "country": "Saudi Arabia",
+      "status": "On Hold",
+      "progress": 15,
+      "contractor": "Al Faris Earthworks",
+      "consultant": "Meridian Structural Engineers",
+      "client": "General Roads Authority",
+      "startDate": "2024-10-14",
+      "finishDate": "2027-07-12",
+      "disciplines": [
+        "Materials",
+        "Hydraulic",
+        "Civil"
+      ],
+      "images": [
+        "assets/images/road-1.svg",
+        "assets/images/road-2.svg",
+        "assets/images/road-3.svg"
+      ],
+      "tags": [
+        "roads"
+      ]
+    },
+    {
+      "id": "proj-0012",
+      "category": "railways",
+      "name": "Northern Commuter Rail Extension",
+      "description": "14 km double-track electrified commuter rail extension with two new stations.",
+      "lat": 59.3293,
+      "lng": 18.0686,
+      "address": "Northern Suburbs",
+      "country": "Sweden",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Nordtrack Rail Constructors",
+      "consultant": "Continental Transport Engineers",
+      "client": "National Rail Administration",
+      "startDate": "2019-03-21",
+      "finishDate": "2021-11-14",
+      "disciplines": [
+        "Transportation",
+        "Process",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/railway-1.svg",
+        "assets/images/railway-2.svg",
+        "assets/images/railway-3.svg"
+      ],
+      "tags": [
+        "railways"
+      ]
+    },
+    {
+      "id": "proj-0013",
+      "category": "railways",
+      "name": "Highland Freight Bypass Line",
+      "description": "22 km freight bypass line removing heavy rail traffic from the city centre.",
+      "lat": 55.9533,
+      "lng": -3.1883,
+      "address": "Highland Freight Corridor",
+      "country": "United Kingdom",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Caledonia Rail Works",
+      "consultant": "Northline Structural Partners",
+      "client": "Rail Infrastructure Board",
+      "startDate": "2023-05-18",
+      "finishDate": "2024-11-24",
+      "disciplines": [
+        "Materials",
+        "Electrical",
+        "Environmental"
+      ],
+      "images": [
+        "assets/images/railway-1.svg",
+        "assets/images/railway-2.svg",
+        "assets/images/railway-3.svg"
+      ],
+      "tags": [
+        "railways"
+      ]
+    },
+    {
+      "id": "proj-0014",
+      "category": "railways",
+      "name": "Sahel Regional Rail Link",
+      "description": "310 km single-track regional rail link connecting inland mining regions to the coast.",
+      "lat": 12.6392,
+      "lng": -8.0029,
+      "address": "Sahel Corridor",
+      "country": "Mali",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Continental Rail Builders",
+      "consultant": "Meridian Structural Engineers",
+      "client": "Regional Rail Authority",
+      "startDate": "2021-07-06",
+      "finishDate": "2025-01-24",
+      "disciplines": [
+        "Materials",
+        "Geotechnical",
+        "Process"
+      ],
+      "images": [
+        "assets/images/railway-1.svg",
+        "assets/images/railway-2.svg",
+        "assets/images/railway-3.svg"
+      ],
+      "tags": [
+        "railways"
+      ]
+    },
+    {
+      "id": "proj-0015",
+      "category": "airports",
+      "name": "Eastgate International Terminal 3",
+      "description": "New 90,000 sqm international terminal with 18 contact gates.",
+      "lat": 13.69,
+      "lng": 100.7501,
+      "address": "Eastgate International Airport",
+      "country": "Thailand",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Skyline Aviation Builders",
+      "consultant": "Vantage Aviation Engineers",
+      "client": "Airport Authority",
+      "startDate": "2024-05-27",
+      "finishDate": "2026-03-12",
+      "disciplines": [
+        "Materials",
+        "Structural",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/airport-1.svg",
+        "assets/images/airport-2.svg",
+        "assets/images/airport-3.svg"
+      ],
+      "tags": [
+        "airports"
+      ]
+    },
+    {
+      "id": "proj-0016",
+      "category": "airports",
+      "name": "Northfjord Regional Airfield Upgrade",
+      "description": "Runway extension and new air traffic control tower for a regional airfield.",
+      "lat": 64.1466,
+      "lng": -21.9426,
+      "address": "Northfjord Airfield",
+      "country": "Iceland",
+      "status": "On Hold",
+      "progress": 15,
+      "contractor": "Fjordline Marine Contractors",
+      "consultant": "Vantage Aviation Engineers",
+      "client": "Civil Aviation Administration",
+      "startDate": "2022-01-04",
+      "finishDate": "2024-05-08",
+      "disciplines": [
+        "Surveying",
+        "Civil",
+        "MEP"
+      ],
+      "images": [
+        "assets/images/airport-1.svg",
+        "assets/images/airport-2.svg",
+        "assets/images/airport-3.svg"
+      ],
+      "tags": [
+        "airports"
+      ]
+    },
+    {
+      "id": "proj-0017",
+      "category": "airports",
+      "name": "Savanna Cargo Hub",
+      "description": "Dedicated air-cargo terminal and apron expansion serving regional agri-exports.",
+      "lat": -1.2921,
+      "lng": 36.8219,
+      "address": "Savanna Cargo District",
+      "country": "Kenya",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Rift Valley Contractors",
+      "consultant": "Vantage Aviation Engineers",
+      "client": "National Airports Corporation",
+      "startDate": "2019-09-25",
+      "finishDate": "2020-03-22",
+      "disciplines": [
+        "Geotechnical",
+        "Electrical",
+        "Materials"
+      ],
+      "images": [
+        "assets/images/airport-1.svg",
+        "assets/images/airport-2.svg",
+        "assets/images/airport-3.svg"
+      ],
+      "tags": [
+        "airports"
+      ]
+    },
+    {
+      "id": "proj-0018",
+      "category": "ports",
+      "name": "Blackwater Container Terminal",
+      "description": "New deep-water container terminal with three ship-to-shore gantry cranes.",
+      "lat": 51.9244,
+      "lng": 4.4777,
+      "address": "Blackwater Harbour",
+      "country": "Netherlands",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Delta Marine Constructors",
+      "consultant": "Harborline Marine Engineers",
+      "client": "Port Authority",
+      "startDate": "2020-09-25",
+      "finishDate": "2023-12-07",
+      "disciplines": [
+        "Transportation",
+        "MEP",
+        "Environmental"
+      ],
+      "images": [
+        "assets/images/port-1.svg",
+        "assets/images/port-2.svg",
+        "assets/images/port-3.svg"
+      ],
+      "tags": [
+        "ports"
+      ]
+    },
+    {
+      "id": "proj-0019",
+      "category": "ports",
+      "name": "Coral Bay Bulk Cargo Wharf",
+      "description": "Extension of the bulk cargo wharf to accommodate panamax-class vessels.",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "address": "Coral Bay",
+      "country": "Singapore",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Straitline Marine Works",
+      "consultant": "Harborline Marine Engineers",
+      "client": "Maritime & Port Authority",
+      "startDate": "2023-08-04",
+      "finishDate": "2024-04-03",
+      "disciplines": [
+        "Surveying",
+        "Materials",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/port-1.svg",
+        "assets/images/port-2.svg",
+        "assets/images/port-3.svg"
+      ],
+      "tags": [
+        "ports"
+      ]
+    },
+    {
+      "id": "proj-0020",
+      "category": "ports",
+      "name": "Amber Coast Fishing Harbour",
+      "description": "Rehabilitation and breakwater extension of a regional fishing harbour.",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "address": "Amber Coast",
+      "country": "Turkey",
+      "status": "In Progress",
+      "progress": 20,
+      "contractor": "Bosphorus Marine Contractors",
+      "consultant": "Harborline Marine Engineers",
+      "client": "Coastal Works Directorate",
+      "startDate": "2019-02-23",
+      "finishDate": "2022-01-08",
+      "disciplines": [
+        "Environmental",
+        "Civil",
+        "Materials"
+      ],
+      "images": [
+        "assets/images/port-1.svg",
+        "assets/images/port-2.svg",
+        "assets/images/port-3.svg"
+      ],
+      "tags": [
+        "ports"
+      ]
+    },
+    {
+      "id": "proj-0021",
+      "category": "factories",
+      "name": "Cascade Precision Components Plant",
+      "description": "New precision-machining plant producing automotive drivetrain components.",
+      "lat": 50.1109,
+      "lng": 8.6821,
+      "address": "Cascade Industrial Park",
+      "country": "Germany",
+      "status": "In Progress",
+      "progress": 75,
+      "contractor": "Rheinmetall Fabrication Co",
+      "consultant": "Continental Process Engineers",
+      "client": "Cascade Automotive Group",
+      "startDate": "2021-11-16",
+      "finishDate": "2022-09-05",
+      "disciplines": [
+        "Surveying",
+        "Hydraulic",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/factory-1.svg",
+        "assets/images/factory-2.svg",
+        "assets/images/factory-3.svg"
+      ],
+      "tags": [
+        "factories"
+      ]
+    },
+    {
+      "id": "proj-0022",
+      "category": "factories",
+      "name": "Meridian Textile Mill Expansion",
+      "description": "Expansion of an existing textile mill adding two new weaving halls.",
+      "lat": 23.8103,
+      "lng": 90.4125,
+      "address": "Meridian Industrial Zone",
+      "country": "Bangladesh",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Padma Industrial Builders",
+      "consultant": "Continental Process Engineers",
+      "client": "Meridian Textiles Ltd",
+      "startDate": "2022-04-04",
+      "finishDate": "2023-11-14",
+      "disciplines": [
+        "Transportation",
+        "Hydraulic",
+        "Structural"
+      ],
+      "images": [
+        "assets/images/factory-1.svg",
+        "assets/images/factory-2.svg",
+        "assets/images/factory-3.svg"
+      ],
+      "tags": [
+        "factories"
+      ]
+    },
+    {
+      "id": "proj-0023",
+      "category": "factories",
+      "name": "Silverline Electronics Assembly Plant",
+      "description": "New surface-mount electronics assembly facility with cleanroom bays.",
+      "lat": 37.5665,
+      "lng": 126.978,
+      "address": "Silverline Tech Park",
+      "country": "South Korea",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Hanul Industrial Contractors",
+      "consultant": "Vantage Process Engineers",
+      "client": "Silverline Electronics Inc",
+      "startDate": "2019-07-24",
+      "finishDate": "2022-02-08",
+      "disciplines": [
+        "Materials",
+        "Hydraulic",
+        "Geotechnical"
+      ],
+      "images": [
+        "assets/images/factory-1.svg",
+        "assets/images/factory-2.svg",
+        "assets/images/factory-3.svg"
+      ],
+      "tags": [
+        "factories"
+      ]
+    },
+    {
+      "id": "proj-0024",
+      "category": "quarries",
+      "name": "Ironridge Limestone Quarry",
+      "description": "Active limestone quarry supplying regional cement production.",
+      "lat": 52.2297,
+      "lng": 21.0122,
+      "address": "Ironridge Hills",
+      "country": "Poland",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Ironridge Extraction Co",
+      "consultant": "Meridian Materials Consulting",
+      "client": "Ironridge Minerals Ltd",
+      "startDate": "2020-05-15",
+      "finishDate": "2021-02-15",
+      "disciplines": [
+        "Structural",
+        "MEP",
+        "Materials"
+      ],
+      "images": [
+        "assets/images/quarry-1.svg",
+        "assets/images/quarry-2.svg",
+        "assets/images/quarry-3.svg"
+      ],
+      "tags": [
+        "quarries"
+      ]
+    },
+    {
+      "id": "proj-0025",
+      "category": "quarries",
+      "name": "Basalt Point Aggregate Works",
+      "description": "Basalt aggregate quarry with on-site crushing and screening plant.",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "address": "Basalt Point",
+      "country": "Argentina",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Pampas Quarry Works",
+      "consultant": "Meridian Materials Consulting",
+      "client": "Basalt Point Aggregates",
+      "startDate": "2019-04-06",
+      "finishDate": "2023-08-16",
+      "disciplines": [
+        "Structural",
+        "Geotechnical",
+        "Transportation"
+      ],
+      "images": [
+        "assets/images/quarry-1.svg",
+        "assets/images/quarry-2.svg",
+        "assets/images/quarry-3.svg"
+      ],
+      "tags": [
+        "quarries"
+      ]
+    },
+    {
+      "id": "proj-0026",
+      "category": "quarries",
+      "name": "Highfell Granite Quarry",
+      "description": "Dimension-stone granite quarry supplying facade cladding material.",
+      "lat": 55.7558,
+      "lng": 37.6173,
+      "address": "Highfell Range",
+      "country": "Russia",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Highfell Stone Works",
+      "consultant": "Meridian Materials Consulting",
+      "client": "Highfell Stone Co",
+      "startDate": "2022-05-26",
+      "finishDate": "2026-05-14",
+      "disciplines": [
+        "Materials",
+        "MEP",
+        "Hydraulic"
+      ],
+      "images": [
+        "assets/images/quarry-1.svg",
+        "assets/images/quarry-2.svg",
+        "assets/images/quarry-3.svg"
+      ],
+      "tags": [
+        "quarries"
+      ]
+    },
+    {
+      "id": "proj-0027",
+      "category": "renewable-energy",
+      "name": "Windridge Offshore Wind Farm",
+      "description": "48-turbine offshore wind farm with 320 MW installed capacity.",
+      "lat": 54.526,
+      "lng": 10.4515,
+      "address": "Windridge Bank",
+      "country": "Denmark",
+      "status": "In Progress",
+      "progress": 65,
+      "contractor": "Nordsea Marine Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Windridge Energy Partners",
+      "startDate": "2020-05-07",
+      "finishDate": "2021-10-24",
+      "disciplines": [
+        "Process",
+        "Environmental",
+        "Structural"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy"
+      ]
+    },
+    {
+      "id": "proj-0028",
+      "category": "renewable-energy",
+      "name": "Sunfield Solar Park",
+      "description": "210 MW utility-scale photovoltaic solar park on former agricultural land.",
+      "lat": 37.9838,
+      "lng": -1.13,
+      "address": "Sunfield Plateau",
+      "country": "Spain",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Iberia Solar Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Sunfield Renewables",
+      "startDate": "2023-08-17",
+      "finishDate": "2025-01-17",
+      "disciplines": [
+        "Civil",
+        "Surveying",
+        "Process"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy"
+      ]
+    },
+    {
+      "id": "proj-0029",
+      "category": "renewable-energy",
+      "name": "Highland Hydro Storage Scheme",
+      "description": "Pumped-storage hydro scheme providing 480 MW of grid balancing capacity.",
+      "lat": 56.4907,
+      "lng": -4.2026,
+      "address": "Highland Glen",
+      "country": "United Kingdom",
+      "status": "In Progress",
+      "progress": 20,
+      "contractor": "Caledonia Hydro Works",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "National Grid Storage Co",
+      "startDate": "2022-02-19",
+      "finishDate": "2023-10-20",
+      "disciplines": [
+        "Civil",
+        "Transportation",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy"
+      ]
+    },
+    {
+      "id": "proj-0030",
+      "category": "renewable-energy",
+      "name": "Karoo Geothermal Pilot Plant",
+      "description": "Pilot-scale geothermal binary power plant on a volcanic field.",
+      "lat": -0.0236,
+      "lng": 37.9062,
+      "address": "Karoo Volcanic Field",
+      "country": "Kenya",
+      "status": "On Hold",
+      "progress": 30,
+      "contractor": "Rift Valley Contractors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Geothermal Development Company",
+      "startDate": "2021-04-22",
+      "finishDate": "2024-06-08",
+      "disciplines": [
+        "Geotechnical",
+        "MEP",
+        "Electrical"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy"
+      ]
+    },
+    {
+      "id": "proj-0031",
+      "category": "power-plants",
+      "name": "Riverbend Combined-Cycle Plant",
+      "description": "840 MW gas-fired combined-cycle power plant with district heating offtake.",
+      "lat": 50.0755,
+      "lng": 14.4378,
+      "address": "Riverbend Energy Park",
+      "country": "Czech Republic",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Vltava Power Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "National Power Holding",
+      "startDate": "2021-02-01",
+      "finishDate": "2023-10-19",
+      "disciplines": [
+        "Materials",
+        "Mechanical",
+        "Process"
+      ],
+      "images": [
+        "assets/images/power-1.svg",
+        "assets/images/power-2.svg",
+        "assets/images/power-3.svg"
+      ],
+      "tags": [
+        "power plants"
+      ]
+    },
+    {
+      "id": "proj-0032",
+      "category": "power-plants",
+      "name": "Coalridge Plant Decommissioning",
+      "description": "Decommissioning and site remediation of a retired coal-fired power station.",
+      "lat": 52.52,
+      "lng": 13.405,
+      "address": "Coalridge Site",
+      "country": "Germany",
+      "status": "On Hold",
+      "progress": 30,
+      "contractor": "Rheinmetall Demolition Co",
+      "consultant": "Continental Process Engineers",
+      "client": "National Power Holding",
+      "startDate": "2020-06-03",
+      "finishDate": "2021-06-10",
+      "disciplines": [
+        "Materials",
+        "Electrical",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/power-1.svg",
+        "assets/images/power-2.svg",
+        "assets/images/power-3.svg"
+      ],
+      "tags": [
+        "power plants"
+      ]
+    },
+    {
+      "id": "proj-0033",
+      "category": "power-plants",
+      "name": "Bluewater Nuclear Uprate Project",
+      "description": "Turbine and safety-system uprate at an existing nuclear generating station.",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "address": "Bluewater Generating Station",
+      "country": "France",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Atome Engineering Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "National Electricity Utility",
+      "startDate": "2024-09-10",
+      "finishDate": "2025-03-09",
+      "disciplines": [
+        "Process",
+        "Materials",
+        "Geotechnical"
+      ],
+      "images": [
+        "assets/images/power-1.svg",
+        "assets/images/power-2.svg",
+        "assets/images/power-3.svg"
+      ],
+      "tags": [
+        "power plants"
+      ]
+    },
+    {
+      "id": "proj-0034",
+      "category": "industrial-facilities",
+      "name": "Portside Grain Silo Complex",
+      "description": "New 120,000-tonne grain storage and export handling complex.",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "address": "Portside Industrial Zone",
+      "country": "Brazil",
+      "status": "On Hold",
+      "progress": 50,
+      "contractor": "Portside Structures Co",
+      "consultant": "Continental Process Engineers",
+      "client": "National Grain Cooperative",
+      "startDate": "2021-10-07",
+      "finishDate": "2024-06-07",
+      "disciplines": [
+        "Electrical",
+        "Materials",
+        "Hydraulic"
+      ],
+      "images": [
+        "assets/images/industrial-1.svg",
+        "assets/images/industrial-2.svg",
+        "assets/images/industrial-3.svg"
+      ],
+      "tags": [
+        "industrial facilities"
+      ]
+    },
+    {
+      "id": "proj-0035",
+      "category": "industrial-facilities",
+      "name": "Freshline Cold-Chain Distribution Centre",
+      "description": "Automated cold-storage and distribution centre for perishable exports.",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "address": "Freshline Logistics Park",
+      "country": "Mexico",
+      "status": "On Hold",
+      "progress": 30,
+      "contractor": "Altiplano Builders",
+      "consultant": "Continental Process Engineers",
+      "client": "Freshline Logistics Group",
+      "startDate": "2019-02-21",
+      "finishDate": "2021-05-02",
+      "disciplines": [
+        "Geotechnical",
+        "MEP",
+        "Electrical"
+      ],
+      "images": [
+        "assets/images/industrial-1.svg",
+        "assets/images/industrial-2.svg",
+        "assets/images/industrial-3.svg"
+      ],
+      "tags": [
+        "industrial facilities"
+      ]
+    },
+    {
+      "id": "proj-0036",
+      "category": "industrial-facilities",
+      "name": "Cascade Water Treatment Works",
+      "description": "New potable water treatment works with 400 ML/day capacity.",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "address": "Cascade Watershed",
+      "country": "Canada",
+      "status": "In Progress",
+      "progress": 20,
+      "contractor": "Northline Water Constructors",
+      "consultant": "Hydraflow Process Engineers",
+      "client": "Regional Water Utility",
+      "startDate": "2024-08-18",
+      "finishDate": "2027-07-18",
+      "disciplines": [
+        "Civil",
+        "Geotechnical",
+        "Materials"
+      ],
+      "images": [
+        "assets/images/industrial-1.svg",
+        "assets/images/industrial-2.svg",
+        "assets/images/industrial-3.svg"
+      ],
+      "tags": [
+        "industrial facilities"
+      ]
+    }
+  ]
+}
