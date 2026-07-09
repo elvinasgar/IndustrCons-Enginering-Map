@@ -51,7 +51,10 @@
 
 /* ---- Map container ---- */
 .map-main{ position: relative; flex: 1; min-width: 0; }
-#map{ position: absolute; inset: 0; background: var(--bg-sunken); }
+/* Establishes a local stacking context so Leaflet's internal panes/controls
+   (z-index up to ~1000) stay contained here and never escape to cover the
+   topbar, sidebar, or detail panel siblings. */
+#map{ position: absolute; inset: 0; background: var(--bg-sunken); z-index: 1; }
 
 /* ---- Floating top bar over map ---- */
 .map-topbar{
