@@ -1,0 +1,181 @@
+{
+  "generated": "2026-07-09",
+  "count": 7,
+  "items": [
+    {
+      "id": "mat-0001",
+      "category": "material-suppliers",
+      "name": "Ironridge Cement & Aggregates",
+      "description": "Regional supplier of bulk cement, aggregate and ready-mix concrete.",
+      "lat": 52.2297,
+      "lng": 21.0122,
+      "address": "Ironridge Depot",
+      "country": "Poland",
+      "founded": "1967",
+      "website": "ironridge-materials.com",
+      "services": [
+        "Ready-Mix Concrete",
+        "Aggregates",
+        "Bulk Cement"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers"
+      ]
+    },
+    {
+      "id": "mat-0002",
+      "category": "material-suppliers",
+      "name": "Continental Steel Supply Co",
+      "description": "Structural steel fabrication and supply for construction projects.",
+      "lat": 50.1109,
+      "lng": 8.6821,
+      "address": "Continental Steel Yard",
+      "country": "Germany",
+      "founded": "1954",
+      "website": "continental-steel.com",
+      "services": [
+        "Structural Steel",
+        "Rebar",
+        "Fabrication"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers"
+      ]
+    },
+    {
+      "id": "mat-0003",
+      "category": "material-suppliers",
+      "name": "Basalt Point Aggregates",
+      "description": "Crushed stone and aggregate supplier serving regional infrastructure projects.",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "address": "Basalt Point Yard",
+      "country": "Argentina",
+      "founded": "1982",
+      "website": "basaltpoint.com",
+      "services": [
+        "Crushed Stone",
+        "Sand & Gravel",
+        "Asphalt Aggregate"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers"
+      ]
+    },
+    {
+      "id": "mat-0004",
+      "category": "material-suppliers",
+      "name": "Northline Timber & Composites",
+      "description": "Engineered timber and composite building-material supplier.",
+      "lat": 59.3293,
+      "lng": 18.0686,
+      "address": "Northline Warehouse",
+      "country": "Sweden",
+      "founded": "1975",
+      "website": "northline-timber.com",
+      "services": [
+        "Engineered Timber",
+        "Composite Panels",
+        "Sustainable Materials"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers"
+      ]
+    },
+    {
+      "id": "mat-0005",
+      "category": "laboratories",
+      "name": "Meridian Materials Testing Lab",
+      "description": "Independent laboratory for concrete, soil and asphalt materials testing.",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "address": "Meridian Lab Building",
+      "country": "United States",
+      "founded": "1988",
+      "website": "meridian-labtest.com",
+      "services": [
+        "Concrete Testing",
+        "Soil Testing",
+        "Asphalt Testing"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "laboratories"
+      ]
+    },
+    {
+      "id": "mat-0006",
+      "category": "laboratories",
+      "name": "Hydraflow Hydraulics Laboratory",
+      "description": "Physical and computational hydraulics modelling laboratory.",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "address": "Hydraflow Research Centre",
+      "country": "Canada",
+      "founded": "1994",
+      "website": "hydraflow-lab.com",
+      "services": [
+        "Hydraulic Modelling",
+        "Flood Simulation",
+        "Scour Testing"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "laboratories"
+      ]
+    },
+    {
+      "id": "mat-0007",
+      "category": "laboratories",
+      "name": "Continental Geotechnical Testing Institute",
+      "description": "Geotechnical and foundation-engineering testing institute.",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "address": "Continental Geo Building",
+      "country": "France",
+      "founded": "1976",
+      "website": "continental-geotest.fr",
+      "services": [
+        "Soil Mechanics",
+        "Foundation Testing",
+        "Site Investigation"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "laboratories"
+      ]
+    }
+  ]
+}
