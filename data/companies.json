@@ -1,0 +1,256 @@
+{
+  "generated": "2026-07-09",
+  "count": 10,
+  "items": [
+    {
+      "id": "co-0001",
+      "category": "universities",
+      "name": "Falkbridge Institute of Technology",
+      "description": "Research university with leading civil and structural engineering faculties.",
+      "lat": 42.3601,
+      "lng": -71.0589,
+      "address": "Falkbridge Campus",
+      "country": "United States",
+      "founded": "1891",
+      "website": "falkbridge.edu",
+      "services": [
+        "Structural Research",
+        "Materials Testing",
+        "Graduate Programs"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "universities"
+      ]
+    },
+    {
+      "id": "co-0002",
+      "category": "universities",
+      "name": "Meridian Polytechnic University",
+      "description": "Polytechnic offering accredited undergraduate engineering degrees and applied research labs.",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "address": "Meridian Campus",
+      "country": "Singapore",
+      "founded": "1955",
+      "website": "meridianpoly.edu",
+      "services": [
+        "Applied Research",
+        "Internship Placement",
+        "Continuing Education"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "universities"
+      ]
+    },
+    {
+      "id": "co-0003",
+      "category": "universities",
+      "name": "Northlake School of Engineering",
+      "description": "Engineering school known for transportation and geotechnical research groups.",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "address": "Northlake Campus",
+      "country": "Canada",
+      "founded": "1912",
+      "website": "northlake.edu",
+      "services": [
+        "Transportation Research",
+        "Geotechnical Testing",
+        "Industry Partnerships"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "universities"
+      ]
+    },
+    {
+      "id": "co-0004",
+      "category": "universities",
+      "name": "Highfield College of Civil Engineering",
+      "description": "Specialist civil engineering college with a strong construction-management programme.",
+      "lat": 51.4545,
+      "lng": -2.5879,
+      "address": "Highfield Campus",
+      "country": "United Kingdom",
+      "founded": "1904",
+      "website": "highfield.ac.uk",
+      "services": [
+        "Construction Management",
+        "Site Surveying",
+        "Professional Accreditation"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "universities"
+      ]
+    },
+    {
+      "id": "co-0005",
+      "category": "engineering-companies",
+      "name": "Meridian Structural Engineers",
+      "description": "Multidisciplinary structural and civil engineering consultancy.",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "address": "Meridian House",
+      "country": "United States",
+      "founded": "1978",
+      "website": "meridian-eng.com",
+      "services": [
+        "Structural Design",
+        "Seismic Engineering",
+        "Peer Review"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0006",
+      "category": "engineering-companies",
+      "name": "Atlas Bridgeworks Consulting",
+      "description": "Specialist bridge and long-span structure design consultancy.",
+      "lat": 47.3769,
+      "lng": 8.5417,
+      "address": "Atlas Tower",
+      "country": "Switzerland",
+      "founded": "1963",
+      "website": "atlasbridgeworks.com",
+      "services": [
+        "Bridge Design",
+        "Cable-Stay Engineering",
+        "Inspection & Assessment"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0007",
+      "category": "engineering-companies",
+      "name": "Continental Transport Engineers",
+      "description": "Highway, rail and transit infrastructure engineering practice.",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "address": "Continental Plaza",
+      "country": "France",
+      "founded": "1985",
+      "website": "continental-transport.eu",
+      "services": [
+        "Highway Design",
+        "Transit Planning",
+        "Traffic Modelling"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0008",
+      "category": "engineering-companies",
+      "name": "Voltgrid Energy Engineers",
+      "description": "Power generation and renewable-energy engineering consultancy.",
+      "lat": 59.9139,
+      "lng": 10.7522,
+      "address": "Voltgrid Centre",
+      "country": "Norway",
+      "founded": "1998",
+      "website": "voltgrid-energy.com",
+      "services": [
+        "Grid Integration",
+        "Renewable Design",
+        "Energy Storage"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0009",
+      "category": "engineering-companies",
+      "name": "Harborline Marine Engineers",
+      "description": "Coastal, port and marine structures engineering firm.",
+      "lat": 52.3676,
+      "lng": 4.9041,
+      "address": "Harborline House",
+      "country": "Netherlands",
+      "founded": "1971",
+      "website": "harborline-marine.com",
+      "services": [
+        "Port Design",
+        "Coastal Protection",
+        "Dredging Engineering"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0010",
+      "category": "engineering-companies",
+      "name": "Halvorsen Consulting Engineers",
+      "description": "Building services and structural consultancy for commercial developments.",
+      "lat": 59.9139,
+      "lng": 10.7522,
+      "address": "Halvorsen Building",
+      "country": "Norway",
+      "founded": "1990",
+      "website": "halvorsen-consulting.com",
+      "services": [
+        "MEP Design",
+        "Structural Engineering",
+        "Sustainability Consulting"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies"
+      ]
+    }
+  ]
+}
