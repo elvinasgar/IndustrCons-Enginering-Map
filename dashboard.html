@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — IndustrCons Engineering Map</title>
+<meta name="description" content="Manage local engineering map entries: add, edit, import and export JSON data.">
+<link rel="icon" href="assets/icons/pin.svg">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topnav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V11l5 3v-3l5 3V8l6 4v9z"/><path d="M3 21h18"/></svg>
+    </span>
+    <span>IndustrCons<small>Engineering Map</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Map</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+  </nav>
+  <div class="nav-spacer"></div>
+  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+    <span class="knob"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3z"/></svg></span>
+  </button>
+</header>
+
+<main id="main" class="dash-shell">
+  <div class="dash-head">
+    <div>
+      <h1>Manage local data</h1>
+      <p>Entries you add or edit here are saved in this browser's local storage — no server, no account.</p>
+    </div>
+    <div class="dash-actions">
+      <button class="btn btn-outline btn-sm" id="importBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M12 21V9"/><path d="M7 14l5-5 5 5"/><path d="M4 3h16"/></svg>
+        Import JSON
+      </button>
+      <button class="btn btn-outline btn-sm" id="exportAllBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+        Export all
+      </button>
+      <button class="btn btn-primary btn-sm" id="addEntryBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Add entry
+      </button>
+    </div>
+  </div>
+
+  <div class="dash-stats" id="dashStats"></div>
+
+  <div class="dash-toolbar">
+    <div class="search-bar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <input type="text" id="dashSearch" placeholder="Search entries…" autocomplete="off">
+    </div>
+    <select class="select" id="dashCategoryFilter" style="max-width:220px;">
+      <option value="">All categories</option>
+    </select>
+    <select class="select" id="dashSourceFilter" style="max-width:180px;">
+      <option value="">All sources</option>
+      <option value="base">Base dataset</option>
+      <option value="custom">Local entries</option>
+    </select>
+  </div>
+
+  <div class="dash-table-wrap">
+    <table class="dash-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Country</th>
+          <th>Status</th>
+          <th>Source</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="dashTableBody"></tbody>
+    </table>
+    <div class="dash-empty empty-state" id="dashEmpty" style="display:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <h4>No entries match</h4>
+      <p>Try a different search term or clear your category filter.</p>
+    </div>
+  </div>
+</main>
+
+<!-- Add / edit entry modal -->
+<div class="modal-overlay" id="entryModalOverlay">
+  <div class="modal tick-frame" id="entryModal">
+    <h3 id="entryModalTitle">Add entry</h3>
+    <p class="eyebrow" style="margin-bottom:16px;">Saved to this browser only</p>
+    <form id="entryForm">
+      <input type="hidden" id="f_id">
+      <div class="dash-form-grid">
+        <div class="full">
+          <label class="field-label" for="f_category">Category</label>
+          <select class="select" id="f_category" required></select>
+        </div>
+        <div class="full">
+          <label class="field-label" for="f_name">Name</label>
+          <input class="input" id="f_name" required>
+        </div>
+        <div class="full">
+          <label class="field-label" for="f_description">Description</label>
+          <textarea class="textarea" id="f_description"></textarea>
+        </div>
+        <div>
+          <label class="field-label" for="f_lat">Latitude</label>
+          <input class="input" id="f_lat" type="number" step="any" required>
+        </div>
+        <div>
+          <label class="field-label" for="f_lng">Longitude</label>
+          <input class="input" id="f_lng" type="number" step="any" required>
+        </div>
+        <div class="full">
+          <label class="field-label" for="f_address">Address</label>
+          <input class="input" id="f_address">
+        </div>
+        <div>
+          <label class="field-label" for="f_country">Country</label>
+          <input class="input" id="f_country">
+        </div>
+        <div>
+          <label class="field-label" for="f_disciplines">Disciplines (comma separated)</label>
+          <input class="input" id="f_disciplines">
+        </div>
+
+        <div id="infraFields" class="full dash-form-grid" style="padding:0; grid-column:1/-1;">
+          <div>
+            <label class="field-label" for="f_status">Status</label>
+            <select class="select" id="f_status">
+              <option>Planned</option><option>In Progress</option><option>On Hold</option><option>Completed</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="f_progress">Progress (%)</label>
+            <input class="input" id="f_progress" type="number" min="0" max="100" value="0">
+          </div>
+          <div>
+            <label class="field-label" for="f_contractor">Contractor</label>
+            <input class="input" id="f_contractor">
+          </div>
+          <div>
+            <label class="field-label" for="f_consultant">Consultant</label>
+            <input class="input" id="f_consultant">
+          </div>
+          <div>
+            <label class="field-label" for="f_client">Client</label>
+            <input class="input" id="f_client">
+          </div>
+          <div></div>
+          <div>
+            <label class="field-label" for="f_startDate">Start date</label>
+            <input class="input" id="f_startDate" type="date">
+          </div>
+          <div>
+            <label class="field-label" for="f_finishDate">Finish date</label>
+            <input class="input" id="f_finishDate" type="date">
+          </div>
+        </div>
+
+        <div id="orgFields" class="full dash-form-grid" style="padding:0; grid-column:1/-1;">
+          <div>
+            <label class="field-label" for="f_founded">Founded (year)</label>
+            <input class="input" id="f_founded">
+          </div>
+          <div>
+            <label class="field-label" for="f_website">Website</label>
+            <input class="input" id="f_website">
+          </div>
+          <div class="full">
+            <label class="field-label" for="f_services">Services (comma separated)</label>
+            <input class="input" id="f_services">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="cancelEntryBtn">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save entry</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Import modal -->
+<div class="modal-overlay" id="importModalOverlay">
+  <div class="modal tick-frame">
+    <h3>Import JSON</h3>
+    <p class="eyebrow" style="margin-bottom:16px;">Accepts an array of entries, or an export from this app</p>
+    <div class="import-drop" id="importDrop">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12"/><path d="M7 10l5-5 5 5"/><path d="M4 21h16"/></svg>
+      <div>Drop a .json file here, or click to choose one</div>
+      <input type="file" id="importFileInput" accept="application/json" style="display:none;">
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="cancelImportBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete confirm modal -->
+<div class="modal-overlay" id="deleteModalOverlay">
+  <div class="modal tick-frame">
+    <h3>Remove this entry?</h3>
+    <p>This removes it from your map view. Base dataset entries can be restored by clearing local data; local entries are deleted permanently.</p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="cancelDeleteBtn">Cancel</button>
+      <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Remove</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/categories.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

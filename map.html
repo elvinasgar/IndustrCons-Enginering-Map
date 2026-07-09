@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map — IndustrCons Engineering Map</title>
+<meta name="description" content="Interactive map of construction, infrastructure and engineering organizations worldwide.">
+<link rel="icon" href="assets/icons/pin.svg">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+<a href="#map" class="skip-link">Skip to map</a>
+
+<header class="topnav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V11l5 3v-3l5 3V8l6 4v9z"/><path d="M3 21h18"/></svg>
+    </span>
+    <span>IndustrCons<small>Engineering Map</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html" class="active">Map</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="nav-spacer"></div>
+  <button class="icon-btn" id="favToggleBtn" title="Show favorites only" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l3 6.6 7 .8-5.2 4.9 1.4 7.2L12 18.3 5.8 22l1.4-7.2L2 9.9l7-.8z"/></svg>
+  </button>
+  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+    <span class="knob"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3z"/></svg></span>
+  </button>
+</header>
+
+<div class="map-shell">
+  <div class="mobile-filter-scrim" id="filterScrim"></div>
+
+  <aside class="filter-sidebar collapsed" id="filterSidebar" aria-label="Filters">
+    <div class="filter-sidebar-head">
+      <h2>Filters</h2>
+      <div style="display:flex; gap:6px;">
+        <button class="btn btn-ghost btn-sm" id="clearFiltersBtn">Clear</button>
+        <button class="icon-btn" id="closeSidebarBtn" aria-label="Close filters">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="filter-scroll">
+
+      <div class="filter-group">
+        <div class="filter-group-title">Categories <button id="allCatsBtn">select all</button></div>
+        <div class="category-list" id="categoryFilterList"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group-title">Status</div>
+        <div class="status-chips" id="statusChips"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group-title">Engineering discipline</div>
+        <div class="discipline-chips" id="disciplineChips"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group-title">Country</div>
+        <select class="select" id="countrySelect">
+          <option value="">All countries</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group-title">Start date after</div>
+        <input type="date" class="input" id="startDateFilter">
+      </div>
+
+    </div>
+  </aside>
+
+  <div class="map-main">
+    <div id="map" role="application" aria-label="Engineering map"></div>
+
+    <div class="map-topbar">
+      <div class="map-search-row">
+        <button class="icon-btn" id="openSidebarBtn" aria-label="Open filters">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        </button>
+        <div class="search-bar" id="searchBarWrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+          <input type="text" id="searchInput" placeholder='Search, or try "completed bridges in Norway"' autocomplete="off">
+          <button class="search-clear" id="searchClearBtn" aria-label="Clear search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <span class="results-count" id="resultsCount">— results</span>
+        <button class="icon-btn" id="exportBtn" title="Export current results as JSON">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>
+        </button>
+      </div>
+      <div class="quick-chip-row" id="quickChipRow"></div>
+    </div>
+
+    <div class="map-controls-stack">
+      <button class="icon-btn" id="locateBtn" title="Use my location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <aside class="detail-panel" id="detailPanel" aria-label="Location detail">
+    <div class="detail-panel-head">
+      <div class="grow eyebrow">Detail</div>
+      <button class="icon-btn" id="shareBtn" title="Share location" aria-label="Share location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.6" x2="15.4" y2="6.4"/><line x1="8.6" y1="13.4" x2="15.4" y2="17.6"/></svg>
+      </button>
+      <button class="icon-btn" id="favBtn" title="Toggle favorite" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M12 2.5l3 6.6 7 .8-5.2 4.9 1.4 7.2L12 18.3 5.8 22l1.4-7.2L2 9.9l7-.8z"/></svg>
+      </button>
+      <button class="icon-btn" id="closeDetailBtn" aria-label="Close detail panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="detail-panel-body" id="detailBody"></div>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script src="js/categories.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

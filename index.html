@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IndustrCons Engineering Map — Explore AEC infrastructure worldwide</title>
+<meta name="description" content="A static, offline-capable map of construction projects, infrastructure and engineering organizations worldwide.">
+<link rel="icon" href="assets/icons/pin.svg">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="topnav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V11l5 3v-3l5 3V8l6 4v9z"/><path d="M3 21h18"/></svg>
+    </span>
+    <span>IndustrCons<small>Engineering Map</small></span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Map</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="nav-spacer"></div>
+  <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+    <span class="knob">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3z"/></svg>
+    </span>
+  </button>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <svg class="compass" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1">
+      <circle cx="100" cy="100" r="90"/><circle cx="100" cy="100" r="60"/><circle cx="100" cy="100" r="2" fill="currentColor"/>
+      <line x1="100" y1="4" x2="100" y2="24"/><line x1="100" y1="176" x2="100" y2="196"/>
+      <line x1="4" y1="100" x2="24" y2="100"/><line x1="176" y1="100" x2="196" y2="100"/>
+    </svg>
+    <div class="hero-inner">
+      <span class="eyebrow">36+ projects · 17 organizations · 15 categories</span>
+      <h1>Every bridge, plant and <em>site office</em> in the AEC world, mapped.</h1>
+      <p class="lead">IndustrCons Engineering Map is a fully static, offline-capable map of construction projects, infrastructure and engineering organizations — built for the IndustrCons IRE-3 virtual internship platform.</p>
+      <div class="hero-actions">
+        <a href="map.html" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+          Open the map
+        </a>
+        <a href="dashboard.html" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Manage data
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="num" id="statProjects">—</span><span class="label">Assets</span></div>
+        <div><span class="num" id="statCategories">15</span><span class="label">Categories</span></div>
+        <div><span class="num" id="statCountries">—</span><span class="label">Countries</span></div>
+        <div><span class="num">0</span><span class="label">Server calls</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>Browse by category</h2>
+        <p>Fifteen engineering categories, each with its own drafted icon and marker color on the map.</p>
+      </div>
+      <a href="map.html" class="btn btn-ghost btn-sm">View all on map →</a>
+    </div>
+    <div class="category-grid" id="categoryGrid"></div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="section-head">
+      <div>
+        <h2>How it works</h2>
+        <p>No sign-up, no server, no tracking — everything runs in your browser.</p>
+      </div>
+    </div>
+    <div class="how-grid">
+      <div class="how-card card tick-frame" style="padding:18px;">
+        <span class="step-num">01 — DATA</span>
+        <h3>Reads local JSON</h3>
+        <p>Projects, companies and materials load once from static JSON files and are cached by your browser for offline use.</p>
+      </div>
+      <div class="how-card card tick-frame" style="padding:18px;">
+        <span class="step-num">02 — EXPLORE</span>
+        <h3>Search &amp; filter</h3>
+        <p>Fast keyword search, category filters, and a natural-language bar like "completed bridges in Norway" — all client-side.</p>
+      </div>
+      <div class="how-card card tick-frame" style="padding:18px;">
+        <span class="step-num">03 — SAVE</span>
+        <h3>Favorites stay local</h3>
+        <p>Star a location and it's remembered in your browser's storage. Nothing leaves your device.</p>
+      </div>
+      <div class="how-card card tick-frame" style="padding:18px;">
+        <span class="step-num">04 — MANAGE</span>
+        <h3>Edit in the dashboard</h3>
+        <p>Add, edit, import or export entries as JSON — a drop-in replacement path for a future real API.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>IndustrCons Engineering Map — static build, zero backend.</span>
+  <span class="mono">v1.0 · GitHub Pages</span>
+</footer>
+
+<script src="js/categories.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+async function renderHome() {
+  await DataStore.init();
+  const counts = DataStore.categoryCounts();
+  document.getElementById('statProjects').textContent = DataStore.getAll().length;
+  document.getElementById('statCountries').textContent = DataStore.countriesInUse().length;
+
+  const grid = document.getElementById('categoryGrid');
+  grid.innerHTML = '';
+  for (const cat of CATEGORIES) {
+    const svg = await loadIconSvg(`assets/icons/${cat.icon}`);
+    const a = document.createElement('a');
+    a.href = `map.html?category=${cat.id}`;
+    a.className = 'category-card';
+    a.style.setProperty('--cat-color', cat.color);
+    a.innerHTML = `
+      <span class="cat-icon">${svg}</span>
+      <span class="cat-name">${cat.label}</span>
+      <span class="cat-count">${counts[cat.id] || 0} on map</span>
+    `;
+    grid.appendChild(a);
+  }
+}
+renderHome();
+</script>
+</body>
+</html>
