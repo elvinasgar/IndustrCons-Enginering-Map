@@ -41,6 +41,13 @@ function initMap() {
     },
   });
   map.addLayer(clusterGroup);
+
+  // Leaflet sometimes measures its container before webfonts/layout finish,
+  // locking in an undersized canvas (visible as a grey strip next to the
+  // tiles). Nudge it to re-measure after layout settles, on resize, and
+  // whenever the sidebar's width-affecting transition finishes.
+  setTimeout(() => map.invalidateSize(), 250);
+  window.addEventListener('resize', debounce(() => map.invalidateSize(), 150));
 }
 
 function buildMarkerIcon(entry) {
@@ -353,11 +360,13 @@ function wireSidebarToggle() {
   function open() {
     sidebar.classList.remove('collapsed');
     if (isMobile()) { sidebar.classList.add('open'); scrim.classList.add('open'); }
+    setTimeout(() => map.invalidateSize(), 280);
   }
   function close() {
     sidebar.classList.add('collapsed');
     sidebar.classList.remove('open');
     scrim.classList.remove('open');
+    setTimeout(() => map.invalidateSize(), 280);
   }
   document.getElementById('openSidebarBtn').addEventListener('click', () => {
     sidebar.classList.contains('collapsed') || (isMobile() && !sidebar.classList.contains('open')) ? open() : close();
