@@ -1,6 +1,6 @@
 {
   "generated": "2026-07-09",
-  "count": 7,
+  "count": 10,
   "items": [
     {
       "id": "mat-0001",
@@ -175,6 +175,84 @@
       ],
       "tags": [
         "laboratories"
+      ]
+    },
+    {
+      "id": "mat-0008",
+      "category": "material-suppliers",
+      "name": "Khazar Cement & Concrete",
+      "description": "Regional cement producer and ready-mix concrete supplier serving Greater Baku.",
+      "lat": 40.447,
+      "lng": 49.908,
+      "address": "Garadagh District, Baku",
+      "country": "Azerbaijan",
+      "founded": "1973",
+      "website": "khazar-cement.az",
+      "services": [
+        "Ready-Mix Concrete",
+        "Bulk Cement",
+        "Precast Elements"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "mat-0009",
+      "category": "material-suppliers",
+      "name": "Absheron Steel Trading",
+      "description": "Structural steel and rebar supplier for construction and industrial projects.",
+      "lat": 40.5892,
+      "lng": 49.6686,
+      "address": "Sumgait Industrial Zone",
+      "country": "Azerbaijan",
+      "founded": "1985",
+      "website": "absheron-steel.az",
+      "services": [
+        "Structural Steel",
+        "Rebar",
+        "Steel Fabrication"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "material suppliers",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "mat-0010",
+      "category": "laboratories",
+      "name": "Khazar Materials Testing Laboratory",
+      "description": "Independent laboratory for concrete, soil and asphalt testing serving Baku-area contractors.",
+      "lat": 40.4093,
+      "lng": 49.8671,
+      "address": "Yasamal District, Baku",
+      "country": "Azerbaijan",
+      "founded": "1999",
+      "website": "khazar-labtest.az",
+      "services": [
+        "Concrete Testing",
+        "Soil Testing",
+        "Asphalt Testing"
+      ],
+      "images": [
+        "assets/images/materials-1.svg",
+        "assets/images/materials-2.svg",
+        "assets/images/materials-3.svg"
+      ],
+      "tags": [
+        "laboratories",
+        "azerbaijan"
       ]
     }
   ]
