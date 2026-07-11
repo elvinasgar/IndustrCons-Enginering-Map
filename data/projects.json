@@ -1,6 +1,6 @@
 {
   "generated": "2026-07-09",
-  "count": 36,
+  "count": 51,
   "items": [
     {
       "id": "proj-0001",
@@ -1080,6 +1080,471 @@
       ],
       "tags": [
         "industrial facilities"
+      ]
+    },
+    {
+      "id": "proj-0037",
+      "category": "construction-projects",
+      "name": "Khazar Crystal Quarter Mixed-Use District",
+      "description": "Waterfront mixed-use district on reclaimed Caspian shoreline with residential towers, retail boulevard and a public promenade.",
+      "lat": 40.3719,
+      "lng": 49.8465,
+      "address": "Bulvar Waterfront, Baku",
+      "country": "Azerbaijan",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Absheron Construction Group",
+      "consultant": "Meridian Structural Engineers",
+      "client": "Khazar Development Agency",
+      "startDate": "2022-04-20",
+      "finishDate": "2023-04-08",
+      "disciplines": [
+        "Electrical",
+        "Transportation",
+        "Materials"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0038",
+      "category": "construction-projects",
+      "name": "Ganja Old Town Regeneration",
+      "description": "Heritage-led regeneration of Ganja's historic core, combining facade restoration with new civic buildings.",
+      "lat": 40.6828,
+      "lng": 46.3606,
+      "address": "Old Town, Ganja",
+      "country": "Azerbaijan",
+      "status": "Planned",
+      "progress": 0,
+      "contractor": "Ganja Heritage Builders",
+      "consultant": "Continental Process Engineers",
+      "client": "Ganja City Executive",
+      "startDate": "2023-08-07",
+      "finishDate": "2027-12-20",
+      "disciplines": [
+        "Environmental",
+        "Transportation",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/construction-1.svg",
+        "assets/images/construction-2.svg",
+        "assets/images/construction-3.svg"
+      ],
+      "tags": [
+        "construction projects",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0039",
+      "category": "bridges",
+      "name": "Kura River Crossing, Mingachevir",
+      "description": "Six-lane concrete box-girder bridge across the Kura River replacing a Soviet-era structure.",
+      "lat": 40.7699,
+      "lng": 47.0492,
+      "address": "Kura Riverfront, Mingachevir",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 75,
+      "contractor": "Absheron Construction Group",
+      "consultant": "Atlas Bridgeworks Consulting",
+      "client": "Azerbaijan Roads Agency",
+      "startDate": "2022-11-06",
+      "finishDate": "2025-06-03",
+      "disciplines": [
+        "MEP",
+        "Civil",
+        "Hydraulic"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0040",
+      "category": "bridges",
+      "name": "Baku Ring Road Overpass Package",
+      "description": "Series of grade-separated overpasses along the Greater Baku Ring Road relieving arterial congestion.",
+      "lat": 40.447,
+      "lng": 49.908,
+      "address": "Greater Baku Ring Road",
+      "country": "Azerbaijan",
+      "status": "On Hold",
+      "progress": 30,
+      "contractor": "Khazar Infrastructure Contractors",
+      "consultant": "Atlas Bridgeworks Consulting",
+      "client": "Azerbaijan Roads Agency",
+      "startDate": "2022-01-09",
+      "finishDate": "2025-01-14",
+      "disciplines": [
+        "Materials",
+        "Civil",
+        "Hydraulic"
+      ],
+      "images": [
+        "assets/images/bridge-1.svg",
+        "assets/images/bridge-2.svg",
+        "assets/images/bridge-3.svg"
+      ],
+      "tags": [
+        "bridges",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0041",
+      "category": "roads",
+      "name": "Baku\u2013Shamakhi Highway Widening",
+      "description": "Widening of the Baku\u2013Shamakhi highway to a dual carriageway with new interchanges and noise barriers.",
+      "lat": 40.63,
+      "lng": 48.64,
+      "address": "Baku\u2013Shamakhi Corridor",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 75,
+      "contractor": "Absheron Roadworks",
+      "consultant": "Continental Transport Engineers",
+      "client": "Azerbaijan Roads Agency",
+      "startDate": "2023-08-02",
+      "finishDate": "2025-03-07",
+      "disciplines": [
+        "Process",
+        "Hydraulic",
+        "Surveying"
+      ],
+      "images": [
+        "assets/images/road-1.svg",
+        "assets/images/road-2.svg",
+        "assets/images/road-3.svg"
+      ],
+      "tags": [
+        "roads",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0042",
+      "category": "roads",
+      "name": "Nakhchivan Mountain Pass Road",
+      "description": "New two-lane mountain road connecting remote settlements to the regional highway network.",
+      "lat": 39.2089,
+      "lng": 45.4122,
+      "address": "Nakhchivan Autonomous Republic",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 35,
+      "contractor": "Nakhchivan Civil Works",
+      "consultant": "Meridian Structural Engineers",
+      "client": "Nakhchivan Roads Directorate",
+      "startDate": "2023-11-06",
+      "finishDate": "2024-02-01",
+      "disciplines": [
+        "MEP",
+        "Transportation",
+        "Civil"
+      ],
+      "images": [
+        "assets/images/road-1.svg",
+        "assets/images/road-2.svg",
+        "assets/images/road-3.svg"
+      ],
+      "tags": [
+        "roads",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0043",
+      "category": "railways",
+      "name": "Baku\u2013Sumgait Commuter Rail Upgrade",
+      "description": "Electrification and double-tracking of the Baku\u2013Sumgait commuter corridor with three modernized stations.",
+      "lat": 40.5892,
+      "lng": 49.6686,
+      "address": "Sumgait Rail Corridor",
+      "country": "Azerbaijan",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Khazar Rail Constructors",
+      "consultant": "Continental Transport Engineers",
+      "client": "Azerbaijan Railways CJSC",
+      "startDate": "2024-02-05",
+      "finishDate": "2026-10-01",
+      "disciplines": [
+        "Geotechnical",
+        "Materials",
+        "Transportation"
+      ],
+      "images": [
+        "assets/images/railway-1.svg",
+        "assets/images/railway-2.svg",
+        "assets/images/railway-3.svg"
+      ],
+      "tags": [
+        "railways",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0044",
+      "category": "airports",
+      "name": "Gabala Regional Airport Terminal Expansion",
+      "description": "Expansion of the regional terminal building and apron to support growing tourism traffic.",
+      "lat": 40.9925,
+      "lng": 47.8492,
+      "address": "Gabala International Airport",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 55,
+      "contractor": "Absheron Aviation Builders",
+      "consultant": "Vantage Aviation Engineers",
+      "client": "Azerbaijan Airports Authority",
+      "startDate": "2019-11-07",
+      "finishDate": "2021-05-18",
+      "disciplines": [
+        "Environmental",
+        "Hydraulic",
+        "Structural"
+      ],
+      "images": [
+        "assets/images/airport-1.svg",
+        "assets/images/airport-2.svg",
+        "assets/images/airport-3.svg"
+      ],
+      "tags": [
+        "airports",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0045",
+      "category": "ports",
+      "name": "Baku International Sea Trade Terminal Extension",
+      "description": "Extension of the Caspian trade terminal with a new multipurpose berth and dry-cargo storage yard.",
+      "lat": 40.355,
+      "lng": 49.937,
+      "address": "Alat Free Economic Zone, Baku",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 55,
+      "contractor": "Khazar Marine Constructors",
+      "consultant": "Harborline Marine Engineers",
+      "client": "Caspian Port Authority",
+      "startDate": "2024-12-20",
+      "finishDate": "2027-03-20",
+      "disciplines": [
+        "Civil",
+        "Process",
+        "Geotechnical"
+      ],
+      "images": [
+        "assets/images/port-1.svg",
+        "assets/images/port-2.svg",
+        "assets/images/port-3.svg"
+      ],
+      "tags": [
+        "ports",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0046",
+      "category": "factories",
+      "name": "Sumgait Aluminium Rolling Plant",
+      "description": "New aluminium rolling and extrusion plant supplying construction and packaging sectors.",
+      "lat": 40.5892,
+      "lng": 49.6686,
+      "address": "Sumgait Chemical Industrial Park",
+      "country": "Azerbaijan",
+      "status": "On Hold",
+      "progress": 30,
+      "contractor": "Khazar Industrial Builders",
+      "consultant": "Continental Process Engineers",
+      "client": "Sumgait Metals Group",
+      "startDate": "2020-03-14",
+      "finishDate": "2021-04-18",
+      "disciplines": [
+        "Mechanical",
+        "Electrical",
+        "Civil"
+      ],
+      "images": [
+        "assets/images/factory-1.svg",
+        "assets/images/factory-2.svg",
+        "assets/images/factory-3.svg"
+      ],
+      "tags": [
+        "factories",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0047",
+      "category": "quarries",
+      "name": "Absheron Limestone Quarry",
+      "description": "Active limestone quarry supplying cement clinker production on the Absheron Peninsula.",
+      "lat": 40.38,
+      "lng": 50.05,
+      "address": "Absheron Peninsula",
+      "country": "Azerbaijan",
+      "status": "On Hold",
+      "progress": 15,
+      "contractor": "Absheron Extraction Co",
+      "consultant": "Meridian Materials Consulting",
+      "client": "Khazar Minerals Ltd",
+      "startDate": "2020-11-03",
+      "finishDate": "2023-05-01",
+      "disciplines": [
+        "Environmental",
+        "Mechanical",
+        "Transportation"
+      ],
+      "images": [
+        "assets/images/quarry-1.svg",
+        "assets/images/quarry-2.svg",
+        "assets/images/quarry-3.svg"
+      ],
+      "tags": [
+        "quarries",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0048",
+      "category": "renewable-energy",
+      "name": "Absheron Offshore Wind Pilot Array",
+      "description": "Pilot offshore wind array on the Caspian shelf, the first of its kind in the region.",
+      "lat": 40.15,
+      "lng": 50.2,
+      "address": "Caspian Shelf, Absheron",
+      "country": "Azerbaijan",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Khazar Marine Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Azerbaijan Renewable Energy Agency",
+      "startDate": "2021-07-13",
+      "finishDate": "2023-06-18",
+      "disciplines": [
+        "Structural",
+        "Environmental",
+        "Transportation"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0049",
+      "category": "renewable-energy",
+      "name": "Gobustan Solar Park",
+      "description": "230 MW utility-scale photovoltaic park on arid land near Gobustan.",
+      "lat": 40.1,
+      "lng": 49.4,
+      "address": "Gobustan District",
+      "country": "Azerbaijan",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Absheron Solar Constructors",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Azerbaijan Renewable Energy Agency",
+      "startDate": "2020-05-28",
+      "finishDate": "2023-04-21",
+      "disciplines": [
+        "Civil",
+        "Environmental",
+        "Mechanical"
+      ],
+      "images": [
+        "assets/images/renewable-1.svg",
+        "assets/images/renewable-2.svg",
+        "assets/images/renewable-3.svg"
+      ],
+      "tags": [
+        "renewable energy",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0050",
+      "category": "power-plants",
+      "name": "Mingachevir Hydro Plant Modernization",
+      "description": "Turbine and control-system modernization at an existing hydroelectric power station on the Kura River.",
+      "lat": 40.7699,
+      "lng": 47.0492,
+      "address": "Mingachevir Reservoir",
+      "country": "Azerbaijan",
+      "status": "In Progress",
+      "progress": 45,
+      "contractor": "Khazar Hydro Works",
+      "consultant": "Voltgrid Energy Engineers",
+      "client": "Azerenerji OJSC",
+      "startDate": "2022-05-15",
+      "finishDate": "2023-08-14",
+      "disciplines": [
+        "Materials",
+        "Electrical",
+        "Environmental"
+      ],
+      "images": [
+        "assets/images/power-1.svg",
+        "assets/images/power-2.svg",
+        "assets/images/power-3.svg"
+      ],
+      "tags": [
+        "power plants",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "proj-0051",
+      "category": "industrial-facilities",
+      "name": "Sumgait Chemical Industrial Park Utilities Upgrade",
+      "description": "Upgrade of shared water, steam and effluent-treatment utilities serving the Sumgait chemical cluster.",
+      "lat": 40.5892,
+      "lng": 49.6686,
+      "address": "Sumgait Chemical Industrial Park",
+      "country": "Azerbaijan",
+      "status": "Completed",
+      "progress": 100,
+      "contractor": "Khazar Industrial Builders",
+      "consultant": "Hydraflow Process Engineers",
+      "client": "Sumgait Industrial Park Authority",
+      "startDate": "2023-03-09",
+      "finishDate": "2025-05-14",
+      "disciplines": [
+        "Geotechnical",
+        "Electrical",
+        "Transportation"
+      ],
+      "images": [
+        "assets/images/industrial-1.svg",
+        "assets/images/industrial-2.svg",
+        "assets/images/industrial-3.svg"
+      ],
+      "tags": [
+        "industrial facilities",
+        "azerbaijan"
       ]
     }
   ]
