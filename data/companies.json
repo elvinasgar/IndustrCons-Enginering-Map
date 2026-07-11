@@ -1,6 +1,6 @@
 {
   "generated": "2026-07-09",
-  "count": 10,
+  "count": 13,
   "items": [
     {
       "id": "co-0001",
@@ -250,6 +250,84 @@
       ],
       "tags": [
         "engineering companies"
+      ]
+    },
+    {
+      "id": "co-0011",
+      "category": "universities",
+      "name": "Absheron Technical University",
+      "description": "State technical university with faculties of civil engineering, oil & gas engineering and architecture.",
+      "lat": 40.3947,
+      "lng": 49.846,
+      "address": "Nasimi District, Baku",
+      "country": "Azerbaijan",
+      "founded": "1950",
+      "website": "absheron-tech.edu.az",
+      "services": [
+        "Civil Engineering Research",
+        "Oil & Gas Engineering",
+        "Graduate Programs"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "universities",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "co-0012",
+      "category": "engineering-companies",
+      "name": "Khazar Structural Engineers",
+      "description": "Structural and geotechnical engineering consultancy serving Caspian-region infrastructure projects.",
+      "lat": 40.4093,
+      "lng": 49.8671,
+      "address": "Baku Business Centre",
+      "country": "Azerbaijan",
+      "founded": "1994",
+      "website": "khazar-structural.az",
+      "services": [
+        "Structural Design",
+        "Seismic Engineering",
+        "Site Supervision"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies",
+        "azerbaijan"
+      ]
+    },
+    {
+      "id": "co-0013",
+      "category": "engineering-companies",
+      "name": "Absheron Transport Consulting",
+      "description": "Highway, rail and airport infrastructure engineering practice.",
+      "lat": 40.4093,
+      "lng": 49.8671,
+      "address": "Nizami District, Baku",
+      "country": "Azerbaijan",
+      "founded": "2003",
+      "website": "absheron-transport.az",
+      "services": [
+        "Highway Design",
+        "Traffic Modelling",
+        "Rail Engineering"
+      ],
+      "images": [
+        "assets/images/engineering-1.svg",
+        "assets/images/engineering-2.svg",
+        "assets/images/engineering-3.svg"
+      ],
+      "tags": [
+        "engineering companies",
+        "azerbaijan"
       ]
     }
   ]
