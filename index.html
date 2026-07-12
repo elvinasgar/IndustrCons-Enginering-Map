@@ -5,10 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IndustrCons Engineering Map — Explore AEC infrastructure worldwide</title>
 <meta name="description" content="A static, offline-capable map of construction projects, infrastructure and engineering organizations worldwide.">
-<link rel="icon" href="assets/icons/pin.svg">
+<link rel="canonical" href="https://elvinasgar.github.io/industrcons-map/index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IndustrCons Engineering Map">
+<meta property="og:title" content="IndustrCons Engineering Map — Explore AEC infrastructure worldwide">
+<meta property="og:description" content="A static, offline-capable map of construction projects, infrastructure and engineering organizations worldwide.">
+<meta property="og:url" content="https://elvinasgar.github.io/industrcons-map/index.html">
+<meta property="og:image" content="https://elvinasgar.github.io/industrcons-map/assets/og/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IndustrCons Engineering Map">
+<meta name="twitter:description" content="A static, offline-capable map of construction projects, infrastructure and engineering organizations worldwide.">
+<meta name="twitter:image" content="https://elvinasgar.github.io/industrcons-map/assets/og/og-cover.png">
+
+<link rel="icon" type="image/png" href="assets/icons/favicon-32.png">
+<link rel="mask-icon" href="assets/icons/pin.svg" color="#E8590C">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/home.css">
+
+<!-- Organization schema (shared across the IndustrCons product family) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IndustrCons",
+  "url": "https://elvinasgar.github.io/industrcons-map/",
+  "logo": "https://elvinasgar.github.io/industrcons-map/assets/icons/logo-512.png",
+  "description": "IndustrCons builds tools for the AEC (Architecture, Engineering & Construction) industry, including an engineering map, cost estimator, documentation and an AI assistant.",
+  "sameAs": [
+    "https://industrconsestimator.netlify.app/",
+    "https://industrconsdocs.netlify.app/",
+    "https://industrcons-ai.vercel.app/"
+  ]
+}
+</script>
+
+<!-- Breadcrumb schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elvinasgar.github.io/industrcons-map/index.html" }
+  ]
+}
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
@@ -16,7 +64,7 @@
 <header class="topnav">
   <a href="index.html" class="brand">
     <span class="brand-mark">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V11l5 3v-3l5 3V8l6 4v9z"/><path d="M3 21h18"/></svg>
+      <img src="assets/icons/logo-512.png" alt="IndustrCons logo" width="30" height="30">
     </span>
     <span>IndustrCons<small>Engineering Map</small></span>
   </a>
@@ -26,6 +74,13 @@
     <a href="dashboard.html">Dashboard</a>
   </nav>
   <div class="nav-spacer"></div>
+  <div class="nav-ecosystem">
+    <button class="btn btn-ghost btn-sm" id="ecosystemBtn" aria-expanded="false">
+      Ecosystem
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="ecosystem-menu" id="ecosystemMenu"></div>
+  </div>
   <button class="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
     <span class="knob">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 0 1-7.54-7.54A9 9 0 0 0 12 3z"/></svg>
@@ -104,6 +159,16 @@
       </div>
     </div>
   </section>
+  <section class="section" style="padding-top:0;">
+    <div class="section-head">
+      <div>
+        <h2>Part of the IndustrCons ecosystem</h2>
+        <p>The map cross-links to the rest of the IndustrCons platform — costing, documentation and AI assistance.</p>
+      </div>
+    </div>
+    <div class="ecosystem-grid" id="ecosystemGrid"></div>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -114,6 +179,7 @@
 <script src="js/categories.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/config.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 <script>
@@ -122,6 +188,17 @@ async function renderHome() {
   const counts = DataStore.categoryCounts();
   document.getElementById('statProjects').textContent = DataStore.getAll().length;
   document.getElementById('statCountries').textContent = DataStore.countriesInUse().length;
+
+  const ecoGrid = document.getElementById('ecosystemGrid');
+  ecoGrid.innerHTML = SITE_CONFIG.ecosystem.map((item) => `
+    <a class="ecosystem-card" href="${item.url}" target="_blank" rel="noopener noreferrer">
+      <div class="em-title">
+        <span>${item.label}</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </div>
+      <p>${item.desc}</p>
+    </a>
+  `).join('');
 
   const grid = document.getElementById('categoryGrid');
   grid.innerHTML = '';
