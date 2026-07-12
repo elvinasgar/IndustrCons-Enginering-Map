@@ -85,6 +85,66 @@ function rebuildMarkers(entries) {
 }
 
 // ---------------------------------------------------------------------
+// Structured data (Place schema) — injected client-side since the
+// dataset is loaded from JSON rather than rendered per-page server-side.
+// ---------------------------------------------------------------------
+function injectJsonLd(id, data) {
+  let el = document.getElementById(id);
+  if (!el) {
+    el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.id = id;
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
+function injectPlaceListSchema(entries) {
+  const items = entries
+    .filter((e) => typeof e.lat === 'number' && typeof e.lng === 'number')
+    .slice(0, 200) // keep the payload reasonable
+    .map((e, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Place',
+        name: e.name,
+        description: e.description,
+        address: { '@type': 'PostalAddress', streetAddress: e.address, addressCountry: e.country },
+        geo: { '@type': 'GeoCoordinates', latitude: e.lat, longitude: e.lng },
+        url: `${SITE_CONFIG.siteUrl}map.html?id=${encodeURIComponent(e.id)}`,
+      },
+    }));
+  injectJsonLd('placeListSchema', {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'IndustrCons Engineering Map — mapped assets',
+    itemListElement: items,
+  });
+}
+
+function injectEntryPlaceSchema(entry) {
+  injectJsonLd('entryPlaceSchema', {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    name: entry.name,
+    description: entry.description,
+    address: { '@type': 'PostalAddress', streetAddress: entry.address, addressCountry: entry.country },
+    geo: { '@type': 'GeoCoordinates', latitude: entry.lat, longitude: entry.lng },
+    url: `${SITE_CONFIG.siteUrl}map.html?id=${encodeURIComponent(entry.id)}`,
+  });
+  injectJsonLd('entryBreadcrumbSchema', {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_CONFIG.siteUrl}index.html` },
+      { '@type': 'ListItem', position: 2, name: 'Map', item: `${SITE_CONFIG.siteUrl}map.html` },
+      { '@type': 'ListItem', position: 3, name: entry.name, item: `${SITE_CONFIG.siteUrl}map.html?id=${encodeURIComponent(entry.id)}` },
+    ],
+  });
+}
+
+// ---------------------------------------------------------------------
 // Filtering
 // ---------------------------------------------------------------------
 function getFilteredEntries() {
@@ -242,6 +302,7 @@ async function openDetail(id) {
   currentDetailId = id;
   galleryIndex = 0;
   map.flyTo([entry.lat, entry.lng], Math.max(map.getZoom(), 9), { duration: 0.6 });
+  injectEntryPlaceSchema(entry);
 
   const cat = getCategory(entry.category);
   const catSvg = await loadIconSvg(`assets/icons/${cat.icon}`);
@@ -301,6 +362,11 @@ async function openDetail(id) {
       ${factsHtml}
       <div class="detail-tags">${(entry.disciplines || []).map((d) => `<span class="tag">${escapeHtml(d)}</span>`).join('')}</div>
       <p class="detail-desc">${escapeHtml(entry.description || '')}</p>
+    </div>
+    <div class="detail-ecosystem-row">
+      ${SITE_CONFIG.ecosystem.map((item) => `
+        <a href="${item.url}?topic=${encodeURIComponent(entry.name)}&category=${encodeURIComponent(entry.category)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">${escapeHtml(item.label)}</a>
+      `).join('')}
     </div>
   `;
 
@@ -386,6 +452,7 @@ async function boot() {
   await DataStore.init();
   await preloadCategoryIcons();
   SearchEngine.build(DataStore.getAll());
+  injectPlaceListSchema(DataStore.getAll());
 
   await buildCategoryFilterList();
   buildStatusChips();
