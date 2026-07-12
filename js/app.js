@@ -36,7 +36,37 @@ function markActiveNav() {
   });
 }
 
+function wireEcosystemMenu() {
+  const btn = document.getElementById('ecosystemBtn');
+  const menu = document.getElementById('ecosystemMenu');
+  if (!btn || !menu || !window.SITE_CONFIG) return;
+
+  menu.innerHTML = SITE_CONFIG.ecosystem.map((item) => `
+    <a href="${item.url}" target="_blank" rel="noopener noreferrer">
+      <span class="em-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        ${escapeHtml(item.label)}
+      </span>
+      <span class="em-desc">${escapeHtml(item.desc)}</span>
+    </a>
+  `).join('');
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const willOpen = !menu.classList.contains('open');
+    menu.classList.toggle('open', willOpen);
+    btn.setAttribute('aria-expanded', String(willOpen));
+  });
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && e.target !== btn) {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   wireThemeToggle();
   markActiveNav();
+  wireEcosystemMenu();
 });
